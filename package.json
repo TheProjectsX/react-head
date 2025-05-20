@@ -1,0 +1,44 @@
+{
+    "name": "@theprojectsx/react-head",
+    "version": "1.0.1",
+    "description": "Lightweight Component to manage the head of your React and Next JS applications",
+    "keywords": [
+        "react-head",
+        "react-helmet",
+        "next-head",
+        "next-helmet",
+        "head"
+    ],
+    "homepage": "https://github.com/TheProjectsX/react-head#readme",
+    "bugs": {
+        "url": "https://github.com/TheProjectsX/react-head/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TheProjectsX/react-head.git"
+    },
+    "author": "The Projects X",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "license": "MIT",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c --bundleConfigAsCjs",
+        "postbuild": "cp src/index.d.ts dist/"
+    },
+    "dependencies": {
+        "react": "^19.1.0",
+        "rollup": "^4.41.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-commonjs": "^28.0.3",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-terser": "^0.4.4",
+        "rollup-plugin-peer-deps-external": "^2.2.4"
+    }
+}
