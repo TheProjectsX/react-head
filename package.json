@@ -1,6 +1,6 @@
 {
     "name": "@theprojectsx/react-head",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Lightweight Component to manage the head of your React and Next JS applications",
     "keywords": [
         "react-head",
@@ -30,15 +30,16 @@
         "build": "rollup -c --bundleConfigAsCjs",
         "postbuild": "cp src/index.d.ts dist/"
     },
-    "dependencies": {
-        "react": "^19.1.0",
-        "rollup": "^4.41.0"
-    },
     "devDependencies": {
         "@rollup/plugin-babel": "^6.0.4",
         "@rollup/plugin-commonjs": "^28.0.3",
         "@rollup/plugin-node-resolve": "^16.0.1",
         "@rollup/plugin-terser": "^0.4.4",
+        "rollup": "^4.41.0",
         "rollup-plugin-peer-deps-external": "^2.2.4"
+    },
+    "peerDependencies": {
+        "react": ">=16.8",
+        "react-dom": ">=16.8"
     }
 }
