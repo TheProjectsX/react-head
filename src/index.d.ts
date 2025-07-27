@@ -13,6 +13,6 @@ export interface UseReactHeadProps {
 
 export declare const useReactHead: (props: UseReactHeadProps) => void;
 
-declare const ReactHead: React.FC<{ children: React.ReactElement }>;
+declare const ReactHead: React.FC<{ children: React.ReactNode }>;
 
 export default ReactHead;

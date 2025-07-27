@@ -53,7 +53,15 @@ export const useReactHead = ({
     useEffect(() => {
         if (!title) return;
 
+        // For regular route change
         document.title = title;
+
+        // For refresh
+        const id = setTimeout(() => {
+            document.title = title;
+        }, 24);
+
+        return () => clearTimeout(id);
     }, [title]);
 
     useEffect(() => {
